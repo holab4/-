@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东-欢迎登录</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css" /> 
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/myJS/login.js"></script>
+</head>
+<body>
+	<div class="log-header w">
+		<div class="log-logo">
+			<a href="index.html"><img src="images/log-logo.png" alt="加载失败"></a>
+			<h2>欢迎登录</h2>
+		</div>
+	</div>
+	<div class="log-center">
+		<div class="w clearfix">
+			<div class="log-box">
+				<div class="log-method">
+					<ul>
+						<li class="log-tab log-tab-l"><a href="javascript:;" id="logQrcode" class="current">扫描登录</a></li>
+						<li class="log-tab log-tab-r"><a href="javascript:;" id="logAccount">账户登录</a></li>
+					</ul>
+				</div>
+				<div class="qrcode-log">
+					<div class="qrcode-main">
+						<div class="qrcode-img" id="qrImg">
+							<img src="images/qrcode.png" alt="">
+						</div>
+						<div class="qrcode-help" style="display: none"></div>
+					</div>
+					<div class="qrcode-how">
+						<span>打开<a href="javascript:;">手机京东</a>&nbsp;&nbsp;&nbsp;&nbsp;扫描二维码</span>
+					</div>
+					<div class="qrcode-advantage">
+						<ul>
+							<li><b></b>免输入</li>
+							<li><b class="faster"></b>更快</li>
+							<li><b class="safer"></b>更安全</li>
+						</ul>
+					</div>
+				</div>
+				<div class="account-log hide">
+					<form method="post" action="" class="log-form">
+						<!-- 用户名输入 -->
+						<div class="int">
+							<label for="username" class="log-label name-label">用户名:</label>
+							<input type="text" class="required" id="username" placeholder="邮箱/用户名/已验证手机">
+						</div>
+						<!-- 密码输入 -->
+						<div class="int">
+							<label for="password" class="log-label pwd-label">密码:</label>
+							<input type="password" class="required" id="password" placeholder="密码">
+						</div>
+						<!-- 错误提示 -->
+						<div class="error-msg hide">
+							<b></b>
+						</div>
+						<div class="log-safe">
+							<a href="javascript:;" class="forgetPwd">忘记密码</a>
+						</div>
+						<div class="sub">
+							<a class="log-btn" id="logBtn">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+						</div>
+					</form>
+				</div>
+				<div class="form-footer">
+					<ul class="clearfix">
+						<li class="fl">
+							<a href="javascript:;" class="otherMethod qq"><i></i>QQ</a>
+							<span class="line">|</span>
+						</li>
+						<li class="fl">
+						<a href="javascript:;" class="otherMethod weixin"><i></i>微信</a>
+						</li>
+						<li class="fr">
+							<a href="register.html" class="reg-link"><i></i>立即注册</a>
+						</li>
+					</ul>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="log-footer w">
+		<div class="links">
+			<ul>
+				<li><a href="javascript:;">关于我们</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">联系我们</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">人才招聘</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">商家入驻</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">广告服务</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">手机京东</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">友情链接</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">销售联盟</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">京东社区</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">京东公益</a></li>
+				<li class="line">|</li>
+				<li><a href="javascript:;">English Site</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			Copyright © 2017  holabbh.com 版权所有
+		</div>
+	</div>
+</body>
+</html>

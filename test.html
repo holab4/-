@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script src="js/myJS/myFrame.js"></script>
+	<style>
+		div{
+			width:100px;
+			height: 100px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+	</div>
+	<script>
+		//访问器属性测试
+		/*var time = {
+			_year:2017,
+			edition:1
+		};
+		Object.defineProperty(time,'_year',{
+			get:function() {
+				return this.year;
+			},
+			set:function(newValue){
+				if(newValue>2017){
+					this.year = newValue;
+					this.edition = newValue - this.year;
+				}
+			}
+		});
+		time._year = 2020;
+		console.log(time._year+ ' ' + time.edition);*/
+		//rplace
+		/*var str = 'aaaaa';
+		console.log(str.replace('a','A'));*/
+		//内存空间指向问题__proto__、prototype
+		/*var a = {'x':1};
+		var b = a;
+		a.x = 2;
+		console.log(b.x)//2;
+		a = {'x':3};
+		console.log(b.x)//2;
+		a.x = 4;
+		console.log(b.x);//2*/
+		//相关面试题
+		/*var a = {n:1};
+		var b = a;
+		a.x = a = {n:2};
+		console.log(a.x);//undefined
+		console.log(b.x);//{n:2}
+		//此例子中，要知道.运算符的优先级是最高的，所以a.x = a = {n:2}在进行从右往左的赋值操作之前，a.x已经先创建，并且此时的值为undefined；接着在赋值操作中，a指向了另一个对象B{n:2}，b仍指向原来那个对象A{n:1,x:undefined}，最后又将{n:2}赋值给了原来对象A中的x，即原来的A对象变为了{n:1,x:{n:2}}*/
+		//arguments 保存参数的伪数组
+		/*function add(){
+			var sum = 0;
+			for(var i=0;i<arguments.length;i++){
+				sum += arguments[i];
+			}
+			return sum;
+		}
+		console.log(add(1,2));*/
+		//apply 巧妙应用（可以传递数组参数）
+		/*//内置对象Math的max方法只能接收离散值
+		var arr = [1,2,5,3,6,4,9,7];
+		console.log(Math.max(1,2,4,3));
+		//而利用apply可以直接传递一个arr数组作为参数
+		console.log(Math.max.apply(null,arr));
+		//利用apply实现两个数组的拼接
+		function addArray(arr1,arr2){
+			return Array.prototype.push.apply(arr1,arr2);
+		}
+		Array.prototype.pushArray = function(arr) {
+			return Array.prototype.push.apply(this,arr);
+		}
+		var arr1 = [1,2,3,4];
+		var arr2 = [5,6,7,8];
+		addArray(arr1,arr2);
+		console.log(arr1); //[1,2,3,4,5,6,7,8]
+		arr1.pushArray(arr2);
+		console.log(arr1); //[1,2,3,4,5,6,7,8,5,6,7,8]*/
+		//利用call实现继承
+		/*function Class1(x){
+			this.x = x;
+			this.fn1 = function(){console.log(1);};
+			this.fn2 = function(){console.log(this.x);};
+		}
+		function Class2(x){
+			Class1.call(this,x);
+		}
+		var c2 = new Class2('x');
+		console.log(c2.x);
+		c2.fn1();
+		c2.fn2();*/
+		//理解prototype和__proto__
+		/*function Animal(name) {
+			this.name = name;
+		}
+		Animal.prototype = {
+			eat:function(){
+				console.log(1);
+			}
+		}
+		var man = new Animal('man');
+		console.log(man.__proto__ === Animal.prototype);//true
+		console.log(Animal.prototype);//自动生成的 默认的
+		console.log(Function.prototype);//js中固有的
+		console.log(Animal.prototype.__proto__ === Object.prototype);//true
+		console.log(Function.__proto__);//Function.prototype
+		console.log(Animal.__proto__ === Function.prototype);//true
+		console.log(Array.prototype.__proto__ === Object.prototype);//true
+		console.log(Array.__proto__ === Function.prototype);//true
+		console.log(Array.prototype);//Array[]
+		var arr = [1,2,3,4];
+		console.log(arr.prototype);//undefined*/
+		//继承测试
+		/*function Person(name,sex) {
+			this.name = name;
+			this.sex = sex;
+		}
+		Person.prototype = {
+			say : function(){
+				console.log('Person.prototype - say');
+			}
+		}
+		function Student(name,sex,num) {
+			console.log(this);
+			Person.apply(this,arguments);
+			this.num = num;
+			this.say();
+			this.exam();
+		}
+		Student.prototype = new Person();
+		Student.prototype.exam  = function() {
+			console.log(this.name);
+			this.num;
+			this.sex;
+		}
+		Student.prototype.say = function() {
+			console.log('Student say');
+		}
+		var nihao = new Student('nihao','male',1234);
+		function A(data){
+			this.name = data.name;
+			this.sex = data.sex;
+		}
+		A.prototype = {
+			sayBye:function(){
+				console.log(this.name + ' say bye in A');
+			}
+		}
+		function B(data){
+			//A.apply(this,arguments);
+		}
+		//原型链继承
+		B.prototype = new A();
+		B.prototype.sayHi = function(){
+			console.log(this.name + ' say hi');
+		}
+		B.prototype.sayBye = function(){
+			console.log(this.name + ' say bye in B');
+		}
+
+		//var b = new A({name:'nihao',sex:'female'});
+		var b = new A('nihao');
+		b.sayHi();
+		b.sayBye();
+
+		//直接继承原型
+		B.prototype = A.prototype;
+		B.prototype.constructor = B;
+		B.prototype.sayHi = function(){
+			console.log(this.name);
+		}
+		B.prototype.sayBye = function(){
+		 console.log('B say bye');
+		 }
+		//利用空对象继承
+		function extendF(A,B) {
+			var F = function(){};
+			F.prototype = B.prototype;
+			A.prototype = new F();
+			A.prototype.constructor = A;
+			A.uber = B.prototype;
+		}
+		//extendF(B,A);
+		//拷贝继承
+		function extendds(A,B) {
+			var a = A.prototype;
+			var b = B.prototype;
+			for(var i in b){
+				a[i] = b[i];
+			}
+		}
+		//extendds(B,A);
+
+		//B.prototype = new A();
+		var data = {name:'holab',sex:'female'};
+		var a = new B(data);
+		console.log(a.name + " " + a.sex);
+		a.sayHi();
+		a.sayBye();
+		function Parent(data){
+			//this.name = data.name;
+			this.name = data;
+		}
+		Parent.prototype = {
+			sayHi:function(){
+				console.log('Parent say hi');
+			}
+		}
+		function Child(data){
+			Parent.apply(this,arguments);
+			//Parent.call(this,data);
+		}
+		//extendF(Child,Parent);
+		//Child.prototype = Parent.prototype;
+		Child.prototype = new Parent();
+		//extendds(Child,Parent);
+		Child.prototype.sayBye = function(){
+			console.log('Child say bye');
+		}
+		Child.prototype.sayHi = function(){
+			console.log('Child say hi');
+		}
+		var a = new Child('holab');
+		//var a = new Child({name:'holab'});
+		console.log(a.name);
+		a.sayHi();
+		a.sayBye();*/
+		//event、target封装测试
+		/*var div = document.getElementById('div');
+		div.onclick = function(e){
+			var event = $F.getEvent(e);
+			$F.getTarget(event).style.backgroundColor = $F.getTarget(event).style.backgroundColor=='skyblue' ? 'pink' : 'skyblue';
+			//this.style.backgroundColor = 'skyblue'; //不用this是因为有些情况this指向不是的调用者本身
+		}*/
+
+	</script>
+</body>
+</html>

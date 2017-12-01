@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+	background-color: #f6f6f6;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w {  /*版心 提取 */
+    width: 1190px;margin:0 auto;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+
+/*顶部 start*/
+.top {
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #dddddd;
+}
+.top .w{
+	height:30px;
+	line-height:30px;
+	color:#999;
+}
+
+
+/*搜索部分*/
+.header{
+	height:140px;
+    margin-bottom: 20px;
+}
+.header .w{
+	position:relative;
+}
+/*logo*/
+.header .logo {
+	width:190px;
+	height:170px;
+    position: absolute;
+	left:0;
+	top:-31px;
+    z-index: 1;
+	box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+}
+.header .logo a {
+    display: block;
+    /*position: absolute;*/
+    width: 190px;
+    height: 170px;
+    background: #fff url(../images/logo.png) no-repeat;
+    text-indent: -9999em;
+}
+/*logo end*/
+
+/*搜索框*/
+
+.searchout {    
+    position: relative;
+	height:60px;
+}
+
+.searchout .searchbox {
+    width: 550px;
+    height: 33px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+.searchbox .searchtext {
+    width: 490px;
+    height: 25px;
+    border: 1px solid #f10215;
+	padding:4px;
+	font-size:14px;
+}
+.searchbox span {
+}
+.searchbox .searchbtn{
+	width:50px;
+	height:35px;
+	background:#f10215;
+	position:absolute;
+	top:0;
+	right:0;
+}
+/*购物车*/
+.shopcar {
+    width: 188px;
+    height: 33px;
+    border: 1px solid #e3e4e5;
+    position: absolute;
+    top: 25px;
+    right: 99px;
+    text-align: center;
+    line-height: 33px;
+}
+.shopcar a {
+    color: #f10113;
+    font-family: "Microsoft YaHei";
+}
+.shopcar .c_pic {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    display: block;
+    float: left;
+}
+.shopcar .c_amount {
+    /*display: inline-block;
+    padding: 2px 4px;
+    border-radius: 16px;
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    !*right:auto;*!
+    background-color: #f10215;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;*/
+    position: absolute;
+    top: 5px;
+    right: 32px;
+    background-color: #f10215;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 2px;
+    width:12px;
+    border-radius: 8px;
+    font-family: "Microsoft YaHei";
+}
+/*购物车end*/
+
+
+
+/*搜索部分end*/
+
+
+
+
+
+
+
+
+
+
+

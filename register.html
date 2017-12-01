@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人注册</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/myJS/register.js"></script>
+</head>
+<body>
+	<div class="reg-header">
+		<div class="w">
+			<a href="index.html" class="icon reg-logo fl"></a>
+			<h2 class="reg-title fl">欢迎注册</h2>
+			<div class="have-account fr">
+				已有账号？<a href="login.html">请登录</a>
+			</div>
+		</div>
+	</div>
+	<div class="center w">
+		<div class="reg-main clearfix">
+			<div class="reg-form fl">
+				<form action="post">
+					<div class="form-int">
+						<label for="username" class="reg-label">用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名</label>
+						<txt>您的账户名和登录名</txt>
+						<input type="text" name="username" maxlength="20" id="username" class="input-feild"	 placeholder="" default="<i class='i-tip'></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符" />
+						<i class="i-status"></i>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-int">
+						<label for="password" class="reg-label">设&nbsp;置&nbsp;密&nbsp;码</label>
+						<txt>建议至少使用两种字符组合</txt>
+						<input type="password" name="password" maxlength="20" id="password" class="input-feild" placeholder="" default="<i class='i-tip'></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符" />
+						<i class="i-status"></i>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-int">
+						<label for="" class="reg-label">确&nbsp;认&nbsp;密&nbsp;码</label>
+						<txt>请再次输入密码</txt>
+						<input type="password" name="pwdRepeat" maxlength="20" id="pwdRepeat" class="input-feild" placeholder="" default="<i class='i-tip'></i>请再次输入密码" />
+						<i class="i-status"></i>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-int">
+						<label for="" class="reg-label">邮&nbsp;箱&nbsp;验&nbsp;证</label>
+						<txt>建议使用常用邮箱</txt>
+						<input type="text" name="email" id="email" class="input-feild" 	placeholder="" default="<i class='i-tip'></i>完成验证后，你可以用该邮箱登录和找回密码" />
+						<i class="i-status"></i>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>			
+					<div class="form-int phone-wrap">
+						<label for="" class="reg-label label-phone">中国&nbsp;0086
+							<a href="javascript:;" class="icon arrow"></a>
+						</label>
+						<txt>建议使用常用手机</txt>
+						<input type="text" name="phoneNumber" maxlength="11" id="phoneNumber" class="input-feild" placeholder="" default="<i class='i-tip'></i>完成验证后，你可以用该手机登录和找回密码" />
+						<i class="i-status"></i>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-int">
+						<label for="" class="reg-label">验&nbsp;&nbsp;&nbsp;证&nbsp;&nbsp;&nbsp;码</label>
+						<txt>请输入验证码</txt>
+						<input type="text" name="autoCode" maxlength="6" id="autoCode" class="input-feild" placeholder="" default="<i class='i-tip'></i>看不清？点击图片更换验证码" />
+						<img src="images/code.jpg" title="换一换" class="img-code" id="	imgAutoCode">
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-int phonecode">
+						<label for="" class="reg-label">手机验证码</label>
+						<txt>请输入手机验证码</txt>
+						<input type="text" name="phoneCode" maxlength="6" id="phoneCode" class="input-feild" placeholder="" />
+						<button id="btnPhoneCode">获取验证码</button>
+					</div>
+					<div class="input-tip">
+						<span></span>
+					</div>
+					<div class="form-sub">
+						<button class="reg-btn" id="register" click="javascript:;">立即注册</button>
+					</div>
+				</form>
+			</div>
+			<div class="fl reg-other">
+				<div class="company-reg">
+					<a href="javascript:;"><i class="i-company"></i><span>企业用户注册</span></a>
+				</div>
+				<div class="inter-cust">
+					<a href="javascript:;"><i class="i-global"></i><span>INTERNATIONAL<br>	CUSTOMERS<span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="reg-footer">
+		<div class="w">
+			<div class="links">
+				<ul>
+					<li><a href="javascript:;">关于我们</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">人才招聘</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">商家入驻</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">广告服务</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">手机京东</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">友情链接</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">销售联盟</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">京东社区</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">京东公益</a></li>
+					<li class="line">|</li>
+					<li><a href="javascript:;">English Site</a></li>
+				</ul>
+			</div>
+			<div class="copyright">Copyright © 2017  holabbh.com 版权所有</div>
+		</div>
+	</div>
+</body>
+</html>

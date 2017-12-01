@@ -1,0 +1,258 @@
+@charset "UTF-8";
+body {
+	background: #fff;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    font-size: 14px;
+}
+button {
+	cursor: pointer;
+}
+.w {
+	width: 1210px;
+	margin: 0 auto;
+}
+a:hover{text-decoration: underline;}
+.icon,i{	
+	background: url(../images/reg-icons.png) no-repeat;
+}
+i {
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+/*顶部*/
+.reg-header {
+	height: 110px;
+	background: url(../images/headbg.jpg) repeat-x left bottom;
+	/*添加了背景图片之后 为啥它的底部有个黑影？*/
+	/*box-shadow: 0 0 10px rgba(0,0,0,.2);*/
+}
+.reg-logo{
+	display: block;
+	width: 160px;
+	height: 50px;
+	margin-top: 24px;
+}
+.reg-title {
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    padding-left: 30px;
+    margin-top: 34px;
+}
+.have-account {
+    font-size: 16px;
+    margin-top: 55px;
+    color: #999;
+}
+.have-account a {
+	color: #333;
+} 
+/*中间注册部分*/
+.reg-main {
+	margin:50px auto 60px;
+	width: 830px;
+}
+.reg-form{
+	width: 400px;
+}
+.form-int {
+    position: relative;
+    border: solid 1px #ddd;
+    width: 398px;
+    height: 52px;
+    z-index: 0;
+}
+.form-int-error {
+	border: solid 1px #e22;
+}
+.input-tip {
+    color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+.error {
+	color: #e22;
+}
+.input-tip span i,.i-tip {
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+.i-error {
+	background-position: -17px -100px;
+}
+.pwd-error {
+	background-position: -17px -134px;
+}
+.pwd-tip-medium {
+	background-position: -34px -117px;
+}
+.pwd-tip-strong {
+	background-position: -34px -134px;
+}
+.i-tip{
+	background-position: 0 -100px;
+}
+.reg-btn {
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 16px;
+}
+/*输入框右边部分*/
+.reg-label {
+    float: left;
+    width: 90px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 20px;
+}
+.label-phone {
+	width: 104px;
+    border-right: solid 1px #ddd;
+}
+.arrow{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 5px;
+    background-position: -2px -151px;
+}
+/*输入框*/
+.input-feild {
+    border: 0 none;
+    font-size: 14px;
+    width: 190px;
+    height: 19px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.phone-wrap input {
+	padding-left:7px!important;
+}
+.form-int txt {
+    position: absolute;
+    z-index: 2;
+    line-height: 46px;
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "Hiragino Sans GB";
+    color: rgb(204, 204, 204);
+    /*display: inline;*/
+}
+.phone-wrap txt {
+	margin-left: 7px!important;
+}
+.i-status {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-position: 0 -117px;
+	display: none;
+}
+.img-code {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 110px;
+    height: 46px;
+    cursor: pointer;
+}
+.phonecode button{
+	display: block;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 110px;
+    height: 46px;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    padding: 0;
+}
+/*中间右边部分*/
+.reg-other {
+	border-left: solid 1px #e6e6e6;
+	height: 605px;
+    padding-left: 90px;
+    margin-left: 104px;
+}
+.reg-other div {
+    width: 160px;
+    height: 60px;
+    margin-left: 30px;
+}
+.company-reg {
+    border-bottom: solid 1px #ddd;
+
+}
+.inter-cust {
+    margin-top: 30px;
+}
+.company-reg a{
+    display: block;
+    width: 160px;
+    height: 40px;
+}
+.inter-cust a {
+    display: block;
+    width: 170px;
+    height: 40px;
+    text-decoration: none;
+}
+.reg-other a:hover {
+	color: #000;
+	font-weight: bold;
+}
+.reg-other i {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+}
+i.i-company {
+	background-position: 0 -50px;
+	vertical-align: middle;	
+}
+.inter-cust i.i-global {
+	background-position: -50px -50px;
+    vertical-align: text-bottom;
+    margin-bottom: 4px;
+}
+.reg-other span {
+	display: inline-block;
+}
+.company-reg span {
+	vertical-align: middle;
+}
+.company-reg span:hover {
+	text-decoration: underline;
+}
+/*底部*/
+.reg-footer {
+	font-size: 12px;
+	border-top: 1px solid #e6e6e6;
+    text-align: center;
+    color: #999;
+    padding-bottom: 30px;
+}
+.links {
+	padding-top:30px;
+	padding-bottom: 15px;
+}
+.links li{
+	display: inline-block;
+}
+.links a {
+	color: #999;
+}
+.line {
+	margin:0 10px;
+}

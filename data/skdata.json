@@ -1,0 +1,36 @@
+{
+  "sum":5,
+  "products":[
+    {
+      "name":"清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）",
+      "price":59.80,
+      "o_price":118.00,
+      "images":"images/sk-prod-picture1.jpg"
+    },
+    {
+      "name":"清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）",
+      "price":59.80,
+      "o_price":118.00,
+      "images":"images/sk-prod-picture2.jpg"
+    },
+    {
+      "name":"清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）",
+      "price":59.80,
+      "o_price":118.00,
+      "images":"images/sk-prod-picture3.jpg"
+    },
+    {
+      "name":"清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）",
+      "price":59.80,
+      "o_price":118.00,
+      "images":"images/sk-prod-picture4.jpg"
+    },
+    {
+      "name":"清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）",
+      "price":59.80,
+      "o_price":118.00,
+      "images":"images/sk-prod-picture5.jpg"
+    }
+  ]
+
+}

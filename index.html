@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东首页</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js\template.js"></script>
+    <script src="js/myJS/myFrame.js"></script>
+    <script src="js/myJS/timeout.js"></script>
+	<script src="js/myJS/product.js"></script>
+	<script src="js/myJS/seckillProduct.js"></script>
+	<script src="js/myJS/slideshow.js"></script>
+    <script src="js/myJS/index.js"></script>
+</head>
+<body>
+    <!--顶部 start-->
+    <div class="top">
+		<div class="w">
+			<!-- 地址 -->
+            <div class="fl address">
+            	<div class="default"><a href="#"><i class="iconfont"></i>北京</a></div>
+            	<div class="add-more">
+            		<ul id="chooseAdd">
+            			<li><a href="javascript:void(0);" id="1" class="selected">北京</a></li>
+            			<li><a href="javascript:void(0);" id="2">上海</a></li>
+            			<li><a href="javascript:void(0);" id="3">天津</a></li>
+            			<li><a href="javascript:void(0);" id="4">重庆</a></li>
+            			<li><a href="javascript:void(0);" id="5">河北</a></li>
+            			<li><a href="javascript:void(0);" id="6">山西</a></li>
+            			<li><a href="javascript:void(0);" id="7">河南</a></li>
+            			<li><a href="javascript:void(0);" id="8">辽宁</a></li>
+            			<li><a href="javascript:void(0);" id="9">吉林</a></li>
+            			<li><a href="javascript:void(0);" id="10">黑龙江</a></li>
+            			<li><a href="javascript:void(0);" id="11">内蒙古</a></li>
+            			<li><a href="javascript:void(0);" id="12">江苏</a></li>
+            			<li><a href="javascript:void(0);" id="13">山东</a></li>
+            			<li><a href="javascript:void(0);" id="14">安徽</a></li>
+            			<li><a href="javascript:void(0);" id="15">浙江</a></li>
+            			<li><a href="javascript:void(0);" id="16">福建</a></li>
+            			<li><a href="javascript:void(0);" id="17">湖北</a></li>
+            			<li><a href="javascript:void(0);" id="18">湖南</a></li>
+            			<li><a href="javascript:void(0);" id="19">广东</a></li>
+            			<li><a href="javascript:void(0);" id="20">广西</a></li>
+            			<li><a href="javascript:void(0);" id="21">江西</a></li>
+            			<li><a href="javascript:void(0);" id="22">四川</a></li>
+            			<li><a href="javascript:void(0);" id="23">海南</a></li>
+            			<li><a href="javascript:void(0);" id="24">贵州</a></li>
+            			<li><a href="javascript:void(0);" id="25">云南</a></li>
+            			<li><a href="javascript:void(0);" id="26">西藏</a></li>
+            			<li><a href="javascript:void(0);" id="27">陕西</a></li>
+            			<li><a href="javascript:void(0);" id="28">甘肃</a></li>
+            			<li><a href="javascript:void(0);" id="29">青海</a></li>
+            			<li><a href="javascript:void(0);" id="30">宁夏</a></li>
+            			<li><a href="javascript:void(0);" id="31">新疆</a></li>
+            			<li><a href="javascript:void(0);" id="32">港澳</a></li>
+            			<li><a href="javascript:void(0);" id="33">台湾</a></li>
+            			<li><a href="javascript:void(0);" id="34">钓鱼岛</a></li>
+            			<li><a href="javascript:void(0);" id="35">海外</a></li>
+            		</ul>
+            	</div>
+        	</div>
+        	<!-- 地址end -->
+            <div class="fr">
+                <ul id="topNav">
+                    <li class="first"><a href="login.html">你好，请登录</a>&nbsp;&nbsp;<a href="register.html" class="freg">免费注册</a></li>
+                    <li class="bar"></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="bar"></li>
+                    <li class="dropdown">
+                    	<div class="dt">
+                            <a href="#">我的京东<i class="triangle"><s>◇</s></i></a>
+                        </div>
+                    	<div class="dd my-jd">                    		
+                    	</div>
+                	</li>
+                    <li class="bar"></li>
+                    <li><a href="#">京东会员</a></li>
+                    <li class="bar"></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li class="bar"></li>
+                    <li class="dropdown">
+                    	<div class="dt">
+                            <a href="#">客户服务<i class="triangle"><s>◇</s></i></a>
+                        </div>
+                    	<div class="dd cust-service">
+                    		
+                    	</div>
+                	</li>
+                    <li class="bar"></li>
+                    <li class="dropdown">
+                    	<div class="dt">
+                            <a href="#">网站导航<i class="triangle"><s>◇</s></i></a>
+                        </div>
+                    	<div class="dd web-nav">
+                    		
+                    	</div>
+                    </li>
+                    <li class="bar"></li>
+                    <li class="">
+						<div class="mobile">手机京东</div>
+						<div class="mobile-qrcode">
+							<img src="images/mobile_qrcode.jpg" alt="bug">
+						</div>
+					</li>
+                </ul>				
+            </div>
+		</div>
+    </div>
+    <!--顶部end-->
+	<!-- 头部 -->
+	<div class="header">
+		<div class="w">
+			<!--logo-->
+			<div class="logo">
+				<a href="index.html">京东</a>
+			</div>
+			<!--logo结束-->
+			<!--搜索框 start-->
+			<div class="search-out">
+				<div class="search-box">
+					<input type="text" class="search-text" placeholder="你好holab"/>
+					<span class="search-pic"></span>
+					<button class="search-btn"><i></i></button>
+				</div>
+			</div>
+			<!--搜索框end-->
+			<!-- 热词 -->
+			<div class="hotwords">
+				<ul>
+					<li><a href="javascript:;" class="hot-current">鲜花一元秒</a></li>
+					<li><a href="javascript:;">5件6折</a></li>
+					<li><a href="javascript:;">农林机械</a></li>
+					<li><a href="javascript:;">七夕礼物</a></li>
+					<li><a href="javascript:;">剃须刀</a></li>
+					<li><a href="javascript:;">瑜伽垫</a></li>
+					<li><a href="javascript:;">火锅</a></li>
+					<li><a href="javascript:;">爱茉莉</a></li>
+					<li><a href="javascript:;">耳机</a></li>
+				</ul>
+			</div>
+			<!-- 热词end -->
+			<!--购物车-->
+			<div class="shopcar">
+				<i class="c_pic"></i>
+				<a href="javascript:;">我的购物车</a>
+				<i class="c_amount">0</i>
+			</div>
+			<!--购物车end-->
+			<!-- 头部导航 -->
+			<div class="header-nav">
+				<ul>
+					<li><a href="javascript:;">秒杀</a></li>
+					<li><a href="javascript:;">优惠券</a></li>
+					<li><a href="javascript:;">闪购</a></li>
+					<li><a href="javascript:;">拍卖</a></li>
+					<li class="line"></li>
+					<li><a href="javascript:;">服装城</a></li>
+					<li><a href="javascript:;">京东超市</a></li>
+					<li><a href="javascript:;">生鲜</a></li>
+					<li><a href="javascript:;">全球购</a></li>
+					<li class="line"></li>
+					<li><a href="javascript:;">京东金融</a></li>
+				</ul>
+			</div>
+			<!-- 头部导航end -->
+			<!-- 惊喜 -->
+			<div class="surprise">
+				<a href="javascript:;"></a>
+			</div>
+			<!-- 惊喜end -->
+		</div>
+	</div>
+    <!-- 头部 end -->
+    <!-- 大banner -->
+    <div class="banner">
+    	
+    </div>
+    <!-- 大banner end -->
+    <!-- seckill -->
+    <div class="seckill">
+        <div class="w seckill-inner">
+            <!-- seckill head -->
+            <div class="good-head seckill-head">
+                <div class="good-head-fl fl">
+                    <i class="good-icon icon-clock"></i>
+                    <h3 class="good-title">京东秒杀</h3>
+                    <a href="javascript:;" target="_blank" class="good-des">总有你想不到的低价<i class="good-icon icon-arrow"></i></a>
+                </div>
+                <div class="good-head-fr fr">
+                    <span class="tip">当前场次</span>
+                    <div id="seckill_cd" class="countdown">
+                        <div id="h" class="cd-item cd-time cd-hour"></div>
+                        <div class="cd-item cd-colon">:</div>
+                        <div id="m" class="cd-item cd-time cd-minute"></div>
+                        <div class="cd-item cd-colon">:</div>
+                        <div id="s" class="cd-item cd-time cd-second"></div>
+                    </div>
+                    <span class="tip">后结束抢购</span>
+                </div>
+            </div>
+            <!-- seckill head end -->
+            <!-- 秒杀区商品展示 -->
+            <div class="seckill-con clearfix">
+                <div class="seckill-prod fl">
+                    <ul class="sk-prod-wrapper">
+                        <!-- <li class="sk-prod-item">
+                            <a href="javascript:;" class="sk-prod-link">
+                                <img class="sk-prod-picture" src="images/sk-prod-picture1.jpg" alt="">
+                                <p class="sk-prod-name">清风（APP）抽纸 原木纯品金装系列 3层150抽软抽*20包纸巾 中规格（整箱销售）</p>
+                            </a>
+                            <p class="sk-prod-price">
+                                <span class="new-price"><i>¥</i><span>59.80</span></span>
+                                <span class="origin-price"><i>¥</i><del>119.00</del></span>
+                            </p>
+                        </li> -->
+                    </ul>
+                    <div class="control-arrows">
+                        <a href="javascript:;" class="arrow-item arrow-prev"><i class="iconfont"></i></a>
+                        <a href="javascript:;" class="arrow-item arrow-next"><i class="iconfont"></i></a>
+                    </div>
+                </div>
+                <div class="seckill-special fr">
+                    <ul class="sk-special-pics-list">
+                        <li class="sk-special-pics-item pic1 pics-current">
+                            <a href="javascript:;">
+                                <img class="sk-special-pic" src="images/sk-special-pic1.png" alt="holab">
+                            </a>
+                        </li>
+                        <li class="sk-special-pics-item pic2">
+                            <a href="javascript:;">
+                                <img class="sk-special-pic" src="images/sk-special-pic2.jpg" alt="holab">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="sk-special-dots-list"></ul>
+                </div>
+            </div>
+            <!-- 秒杀区商品展示 end -->
+        </div>
+    </div>
+    <!-- seckill end -->
+</body>
+</html>
